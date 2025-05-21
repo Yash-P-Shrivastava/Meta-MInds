@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                        // Set the target ECMAScript version
+    "module": "ESNext",                     // Set the module system to ESNext
+    "moduleResolution": "node",             // Resolve modules using Node's resolution strategy
+    "strict": true,                         // Enable strict type-checking
+    "jsx": "react",                         // If you're using React (JSX)
+    "esModuleInterop": true,                // Enable compatibility with CommonJS modules
+    "skipLibCheck": true,                   // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": [
+      "./node_modules/@types",              // Include default types
+      "./src/types"                          // Add custom types folder
+    ]
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
